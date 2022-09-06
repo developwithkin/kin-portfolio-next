@@ -1,0 +1,10 @@
+.react-grid-item {
+  transition: all 500ms ease;
+  transition-property: left, top;
+}
+.react-grid-item.react-grid-placeholder {
+  background: black;
+  opacity: 0.1;
+  border-radius: 32px;
+  transition-duration: 500ms;
+}
