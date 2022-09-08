@@ -1,7 +1,6 @@
 import React from "react";
 import useSWR from "swr";
 import axios from "axios";
-import Image from "next/image";
 
 const GridSpotify = ({ spotifyPlaying }) => {
 	const fetcher = (url) => axios.get(url).then((res) => res.data);

@@ -18,10 +18,10 @@ module.exports = {
         'dark-gray': "#30363d"
       },
       boxShadow: {
-        'border-dark': "0px 0px 0px 2px inset rgb(48 54 61)",
-        'border-dark-outer': "0px 0px 0px 5px rgb(48 54 61)",
-        'border-light': "0px 0px 0px 2px inset rgb(240 242 248)",
-        'border-light-outer': "0px 0px 0px 5px rgb(240 242 248)"
+        'border-dark': "0px 0px 0px 2px rgba(48, 54, 61, 1)",
+        'border-dark-outer': "0px 0px 0px 5px rgba(48, 54, 61, 1)",
+        'border-light': "0px 0px 0px 2px rgba(240, 242, 248, 0.5)",
+        'border-light-outer': "0px 0px 0px 5px rgba(240, 242, 248, 0.5)"
       }
     },
   },

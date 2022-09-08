@@ -2,32 +2,36 @@ import React, { useState } from "react";
 
 import { motion, useMotionValue, useMotionTemplate, useSpring } from "framer-motion";
 
+import { FILTER } from "../../constants/FilterConstants";
+import { useFilter } from "../../context/FilterContext";
 import Logo from "../assets/reilogo.svg";
 
 const Header = () => {
 	const [menuIdx, setMenuIdx] = useState(0);
 
+	const { setFilter } = useFilter();
+
 	const menu = [
 		{
-			name: "All",
+			name: FILTER.ALL,
 			idx: 0,
 			width: "50px",
 			left: "1px",
 		},
 		{
-			name: "All",
+			name: FILTER.ABOUT,
 			idx: 1,
 			width: "75px",
 			left: "56px",
 		},
 		{
-			name: "All",
+			name: FILTER.PROJECTS,
 			idx: 2,
 			width: "92px",
 			left: "135px",
 		},
 		{
-			name: "All",
+			name: FILTER.MEDIA,
 			idx: 3,
 			width: "83px",
 			left: "227px",
@@ -55,6 +59,7 @@ const Header = () => {
 							setMenuIdx(0);
 							width.set(menu[0].width);
 							left.set(menu[0].left);
+							setFilter(FILTER.ALL);
 						}}
 					>
 						All
@@ -65,6 +70,7 @@ const Header = () => {
 							setMenuIdx(1);
 							width.set(menu[1].width);
 							left.set(menu[1].left);
+							setFilter(FILTER.ABOUT);
 						}}
 					>
 						About
@@ -75,6 +81,7 @@ const Header = () => {
 							setMenuIdx(2);
 							width.set(menu[2].width);
 							left.set(menu[2].left);
+							setFilter(FILTER.PROJECTS);
 						}}
 					>
 						Projects
@@ -85,6 +92,7 @@ const Header = () => {
 							setMenuIdx(3);
 							width.set(menu[3].width);
 							left.set(menu[3].left);
+							setFilter(FILTER.MEDIA);
 						}}
 					>
 						Media

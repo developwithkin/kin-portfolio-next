@@ -1,6 +1,7 @@
 import React from "react";
 import { Responsive as ResponsiveGridLayout } from "react-grid-layout";
 
+import { useFilter } from "../../context/FilterContext";
 import useDimension from "../../hooks/useDimension";
 import Grid2521 from "./Grid2521";
 import GridBio from "./GridBio";
@@ -9,38 +10,113 @@ import GridMap from "./GridMap";
 import GridGithub from "./GridGithub";
 import GridSpotify from "./GridSpotify";
 import GridDarkToggle from "./GridDarkToggle";
-
+import GridResume from "./GridResume";
+import GridTimes from "./GridTimes";
 
 const MainGrid = () => {
 	const { breakpoint } = useDimension();
+	const { filter } = useFilter();
 
 	const layouts = {
-		md: [
-			{ i: "bio", x: 0, y: 0, w: 2, h: 1 },
-			{ i: "map", x: 2, y: 0, w: 1, h: 1 },
-			{ i: "hariku", x: 3, y: 0, w: 1, h: 2 },
-			{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
-			{ i: "github", x: 1, y: 1, w: 1, h: 1 },
-			{ i: "spotify", x: 0, y: 1, w: 1, h: 1 },
-			{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
-		],
-		sm: [
-			{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
-			{ i: "map", x: 2, y: 0, w: 1, h: 1 },
-			{ i: "hariku", x: 3, y: 0, w: 1, h: 2 },
-			{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
-			{ i: "spotify", x: 0, y: 3, w: 2, h: 1 },
-			{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
-		],
-		xxs: [
-			{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
-			{ i: "map", x: 0, y: 0, w: 2, h: 1 },
-			{ i: "github", x: 0, y: 3, w: 1, h: 1 },
-			{ i: "hariku", x: 1, y: 3, w: 1, h: 2 },
-			{ i: "2521", x: 0, y: 4, w: 1, h: 2 },
-			{ i: "spotify", x: 0, y: 6, w: 2, h: 2 },
-			{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
-		],
+		all: {
+			md: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 0, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "github", x: 1, y: 1, w: 1, h: 1 },
+				{ i: "spotify", x: 0, y: 1, w: 1, h: 1 },
+				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
+			],
+			sm: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 0, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 3, w: 2, h: 1 },
+				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
+				{ i: "github", x: 1, y: 5, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
+				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
+			],
+			xxs: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "github", x: 0, y: 3, w: 1, h: 1 },
+				{ i: "hariku", x: 1, y: 3, w: 1, h: 2 },
+				{ i: "2521", x: 0, y: 4, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 6, w: 2, h: 2 },
+				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
+				{ i: "times", x: 0, y: 9, w: 2, h: 1 },
+			],
+		},
+		about: {
+			md: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "github", x: 3, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 1, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 1, w: 1, h: 1 },
+				{ i: "dark-toggle", x: 1, y: 1, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
+			],
+			sm: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "github", x: 3, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 1, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 3, w: 2, h: 1 },
+				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
+			],
+			xxs: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "github", x: 0, y: 3, w: 1, h: 1 },
+				{ i: "hariku", x: 1, y: 3, w: 1, h: 2 },
+				{ i: "2521", x: 0, y: 4, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 6, w: 2, h: 2 },
+				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
+			],
+		},
+		projects: {
+			md: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "github", x: 3, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 1, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 1, w: 1, h: 1 },
+				{ i: "dark-toggle", x: 1, y: 1, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
+			],
+			sm: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 2, y: 0, w: 1, h: 1 },
+				{ i: "github", x: 3, y: 0, w: 1, h: 1 },
+				{ i: "hariku", x: 3, y: 1, w: 1, h: 2 },
+				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 3, w: 2, h: 1 },
+				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
+			],
+			xxs: [
+				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
+				{ i: "map", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "github", x: 0, y: 3, w: 1, h: 1 },
+				{ i: "hariku", x: 1, y: 3, w: 1, h: 2 },
+				{ i: "2521", x: 0, y: 4, w: 1, h: 2 },
+				{ i: "spotify", x: 0, y: 6, w: 2, h: 2 },
+				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
+				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
+			],
+		},
 	};
 
 	const layoutWidth = {
@@ -65,7 +141,7 @@ const MainGrid = () => {
 		>
 			<ResponsiveGridLayout
 				className="layout"
-				layouts={layouts}
+				layouts={layouts[filter]}
 				cols={{ lg: 4, md: 4, sm: 4, xs: 4, xxs: 2 }}
 				rowHeight={layoutWidth[breakpoint] / layoutCols[breakpoint] - 15}
 				width={layoutWidth[breakpoint] || 1200}
@@ -81,47 +157,36 @@ const MainGrid = () => {
 				isResizable={false}
 				isBounded={true}
 				useCSSTransforms={true}
-				>
+			>
 				{/* <div key={"bio"} >a</div> */}
 				<div key={"bio"} className="grid-item">
 					<GridBio />
 				</div>
-				<div
-					key={"map"}
-					className="grid-item"
-				>
+				<div key={"map"} className="grid-item">
 					<GridMap />
 				</div>
-				<div
-					key={"hariku"}
-					className="grid-item"
-				>
+				<div key={"hariku"} className="grid-item">
 					<GridHariku />
 				</div>
-				<div
-					key={"2521"}
-					className="grid-item"
-				>
+				<div key={"2521"} className="grid-item">
 					<Grid2521 />
 				</div>
-				<div
-					key={"github"}
-					className="grid-item"
-				>
+				<div key={"github"} className="grid-item">
 					<GridGithub />
 				</div>
-				<div
-					key={"spotify"}
-					className="grid-item"
-				>
+				<div key={"spotify"} className="grid-item">
 					<GridSpotify />
 				</div>
-				<div
-					key={"dark-toggle"}
-					className="grid-item"
-				>
+				<div key={"dark-toggle"} className="grid-item">
 					<GridDarkToggle />
 				</div>
+				<div key={"cv"} className="grid-item">
+					<GridResume />
+				</div>
+				<div key={"times"} className="grid-item">
+					<GridTimes />
+				</div>
+
 			</ResponsiveGridLayout>
 		</div>
 	);

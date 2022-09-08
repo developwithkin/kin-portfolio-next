@@ -20,14 +20,14 @@ const Link = ({ label, href, }) => {
 
   return (
     <motion.a
-				className="item-link transition-shadow duration-300 dark:bg-dark dark:shadow-border-dark cursor-pointer bg-white w-9 h-9 absolute left-5 bottom-5 rounded-full overflow-clip flex justify-center items-center"
+				className="item-link transition-shadow duration-300 hover:shadow-border-light-outer dark:bg-dark dark:shadow-border-dark dark:hover:shadow-border-dark-outer cursor-pointer bg-white w-9 h-9 absolute left-4 bottom-4 rounded-full overflow-clip flex justify-center items-center"
 				variants={variants}
         href={href}
         target="_blank"
 				transition={{ duration: 0.3 }}
 			>
 				<motion.p
-					className="mr-9 ml-4 opacity-0 whitespace-nowrap"
+					className="mr-9 ml-4 opacity-0 whitespace-nowrap text-sm"
           style={{ transform: "translateX(-12px)"}}
 					variants={text_variants}
           transition={{ duration: 0.3 }}

@@ -17,7 +17,7 @@ const Grid2521 = () => {
 				className="absolute w-full h-full object-cover"
 			/>
 			<Link 
-				label="2521 Twitter Bot"
+				label="2521 Twitter"
 				href="https://twitter.com/reicehhh/status/1513228954882220044"
 			/>
 		</motion.div>
