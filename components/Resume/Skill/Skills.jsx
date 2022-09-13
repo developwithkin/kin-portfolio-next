@@ -23,6 +23,11 @@ import {
   SiChakraui,
   SiSass,
   SiPostcss,
+  SiApplemusic,
+  SiAdobepremierepro,
+  SiAdobephotoshop,
+  SiAbletonlive,
+  SiProtools,
 } from "react-icons/si";
 import StarRating from "../../UI/StarRating";
 import SkillItem from "./SkillItem";
@@ -87,6 +92,7 @@ const Skills = () => {
 				<SkillItem
 					icon={SiReact}
 					title={"ReactJS"}
+          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
 					className={"bg-sky-500"}
 					rating={4.5}
 					key={"react"}
@@ -102,6 +108,7 @@ const Skills = () => {
 					icon={SiExpress}
 					title={"ExpressJS"}
 					className={"bg-gray-800"}
+          certificate={'http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26'}
 					rating={4}
 					key={"expressjs"}
 				/>
@@ -109,12 +116,14 @@ const Skills = () => {
 					icon={SiNodedotjs}
 					title={"NodeJS"}
 					className={"bg-emerald-500"}
+          certificate={'http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26'}
 					rating={4}
 					key={"nodejs"}
 				/>
 				<SkillItem
 					icon={SiNextdotjs}
 					title={"NextJS"}
+          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
 					className={"bg-gray-800"}
 					rating={4}
 					key={"nodejs"}
@@ -129,6 +138,7 @@ const Skills = () => {
 				<SkillItem
 					icon={SiRedux}
 					title={"Redux"}
+          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
 					className={"bg-purple-500"}
 					rating={4}
 					key={"redux"}
@@ -188,6 +198,40 @@ const Skills = () => {
 					key={"sequelize"}
 				/>
 			</ul>
+
+      <h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
+        Miscellaneous
+      </h2>
+      <ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+				<SkillItem
+					icon={SiAbletonlive}
+					title={"Music Production"}
+					className={"bg-slate-500"}
+					rating={4}
+					key={"music"}
+				/>
+				<SkillItem
+					icon={SiProtools}
+					title={"Audio Production"}
+					className={"bg-red-500"}
+					rating={4}
+					key={"music"}
+				/>
+				<SkillItem
+					icon={SiAdobepremierepro}
+					title={"Video Editing"}
+					className={"bg-purple-500"}
+					rating={4}
+					key={"video"}
+				/>
+				<SkillItem
+					icon={SiAdobephotoshop}
+					title={"Graphic Design"}
+					className={"bg-blue-500"}
+					rating={4}
+					key={"design"}
+				/>
+      </ul>
 		</div>
 	);
 };

@@ -87,7 +87,7 @@ code {
 		@apply pointer-events-auto;
 	}
 	.educations-item {
-		@apply flex flex-col p-4 border border-slate-400 shadow-md dark:bg-dark dark:border-dark-lightgray dark:hover:border-dark-gray bg-white rounded-xl cursor-pointer transition-all duration-300;
+		@apply flex flex-col p-4 border border-slate-300 shadow-md dark:bg-dark dark:border-dark-lightgray dark:hover:border-dark-gray bg-white rounded cursor-pointer transition-all duration-300;
 	}
 }
 

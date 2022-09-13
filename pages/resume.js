@@ -19,6 +19,8 @@ import Education from "../components/Resume/Education/Education";
 import OrganizationExperience from "../components/Resume/OrganizationExperience/OrganizationExperience";
 import WorkExperience from "../components/Resume/WorkExperience/WorkExperience";
 import Skills from "../components/Resume/Skill/Skills";
+import DarkToggler from "../components/UI/DarkToggler";
+import Contact from "../components/Resume/Contacts/Contact";
 
 const ResumePage = () => {
 	const router = useRouter();
@@ -40,6 +42,9 @@ const ResumePage = () => {
 			<Head>
 				<title>Reinhard Kevin - Resume</title>
 			</Head>
+			<div className="fixed bottom-5 right-5 z-10">
+				<DarkToggler />
+			</div>
 			<motion.button
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}
@@ -84,6 +89,9 @@ const ResumePage = () => {
 
 				{/* Skills Section */}
 				<Skills />
+
+				{/* Contact Section */}
+				<Contact />
 			</motion.div>
 
 			{/* Footer */}

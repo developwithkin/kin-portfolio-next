@@ -1,23 +1,22 @@
-import React from "react";
+import React from 'react'
 
-import { MdWbSunny } from "react-icons/md";
-import { IoMdMoon } from "react-icons/io";
+import { useTheme } from '../../context/ThemeContext'
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "../../context/ThemeContext";
-import DarkToggler from "../UI/DarkToggler";
+import { IoMdMoon } from 'react-icons/io'
+import { MdWbSunny } from 'react-icons/md'
 
-const GridDarkToggle = () => {
+import { motion, AnimatePresence } from 'framer-motion'
+
+const DarkToggler = () => {
   const {darkMode, toggleTheme} = useTheme()
 
 	const toggleDarkMode = () => {
 		toggleTheme();
 	};
 
-	return (
-		<div className="h-full w-full flex justify-center items-center">
-			{/* <div
-				className="w-20 h-12 p-1 bg-slate-200 dark:bg-dark-lightgray dark:shadow-border-dark rounded-full relative flex items-center"
+  return (
+    <div
+				className="cursor-pointer w-20 h-12 p-1 bg-slate-500/20 shadow-border-light backdrop-blur-sm dark:bg-dark-lightgray dark:shadow-border-dark rounded-full relative flex items-center"
         style={{ justifyContent: darkMode ? "flex-end" : "flex-start" }}
 				onClick={toggleDarkMode}
 			>
@@ -51,10 +50,8 @@ const GridDarkToggle = () => {
 						)}
 					</AnimatePresence>
 				</motion.div>
-			</div> */}
-			<DarkToggler />
-		</div>
-	);
-};
+			</div>
+  )
+}
 
-export default GridDarkToggle;
+export default DarkToggler

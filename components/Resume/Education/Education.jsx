@@ -18,6 +18,7 @@ const Education = () => {
           school={"Kalbis Institute"}
           course={"Computer Science - Mobile Computing"}
           year={"2019-2023 (present)"}
+					grade={"3.97"}
         />
 			</div>
 		</div>
