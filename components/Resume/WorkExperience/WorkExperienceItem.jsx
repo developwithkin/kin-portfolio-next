@@ -3,7 +3,7 @@ import React from "react";
 const WorkExperienceItem = ({work}) => {
 	return (
 		<div className="mt-4">
-			<div className="flex justify-between">
+			<div className="flex justify-between flex-col sm:flex-row">
 				<div>
 					<h3 className="font-semibold text-lg underline decoration-2 decoration-amber-500">
 						{work.role}

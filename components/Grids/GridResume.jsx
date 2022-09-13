@@ -14,7 +14,7 @@ const GridResume = () => {
 			</div>
 
 			<div className="flex justify-between items-center text-sm">
-				<Link href="#">
+				<Link href="/resume">
 					<a className="px-4 py-2 rounded-full shadow-border-light flex items-center font-medium hover:shadow-border-light-outer dark:shadow-border-dark dark:hover:shadow-border-dark-outer transition-shadow duration-200">
 						<ImArrowUpRight2 className="mr-2" />
 						Read More
