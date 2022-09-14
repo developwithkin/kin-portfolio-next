@@ -1,5 +1,5 @@
 import React from "react";
-import { SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
 import SectionTitle from "../../UI/SectionTitle";
 import ContactItem from "./ContactItem";
 
@@ -13,19 +13,29 @@ const Contact = () => {
 					icon={SiInstagram}
 					title={"Instagram"}
 					value={"@reinhaaard13"}
+					link={"https://www.instagram.com/reinhaaard13/"}
           className={"bg-pink-500"}
 				/>
 				<ContactItem
 					icon={SiLinkedin}
 					title={"LinkedIn"}
 					value={"reinhaaard13"}
+					link={"https://www.linkedin.com/in/reinhaaard13/"}
           className={"bg-blue-500"}
 				/>
 				<ContactItem
 					icon={SiGmail}
 					title={"Email"}
 					value={"reinhardkevin.rk@gmail.com"}
+					link={"mailto:reinhardkevin.rk@gmail.com"}
           className={"bg-red-500"}
+				/>
+				<ContactItem
+					icon={SiGithub}
+					title={"Github"}
+					value={"reinhaaard13"}
+					link={"https://github.com/reinhaaard13"}
+          className={"bg-gray-800"}
 				/>
 			</ul>
 		</div>

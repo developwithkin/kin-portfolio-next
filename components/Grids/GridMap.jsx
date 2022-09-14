@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import { motion, useAnimationControls } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
+import Image from "next/image";
 
 const GridMap = () => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -43,7 +44,7 @@ const GridMap = () => {
 	return (
 		<motion.div
 			whileHover={"hover"}
-			className="w-full h-full"
+			className="w-full h-full relative"
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 		>
@@ -58,7 +59,8 @@ const GridMap = () => {
 					animate={img_ctrl}
 				/>
 			</motion.div>
-			<img
+			<Image
+				layout="fill"
 				src={
 					darkMode
 						? `https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/106.975969,-6.259513,14,0,40/360x360?access_token=${

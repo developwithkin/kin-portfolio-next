@@ -1,6 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 import axios from "axios";
+import Image from "next/image";
 
 const GridSpotify = ({ spotifyPlaying }) => {
 	const fetcher = (url) => axios.get(url).then((res) => res.data);
@@ -10,14 +11,18 @@ const GridSpotify = ({ spotifyPlaying }) => {
 	return (
 		<div className="h-full w-full p-7 md:p-8 flex flex-col items-start justify-between">
 			<div className="absolute album-cover">
-				<img
-					src={
-						data?.albumImageUrl ||
-						"https://i.scdn.co/image/ab67616d0000b273c3040848e6ef0e132c5c8340"
-					}
-					alt="album"
-					className=""
-				/>
+				<div className="relative flex w-full h-full">
+					<Image
+						src={
+							data?.albumImageUrl ||
+							"https://i.scdn.co/image/ab67616d0000b273c3040848e6ef0e132c5c8340"
+						}
+						layout="fill"
+						objectFit="cover"
+						alt="album"
+						className=""
+					/>
+				</div>
 			</div>
 			<img src="spotify.svg" alt="spotify" className="h-9 md:max-h-14" />
 			<div className="">

@@ -12,7 +12,7 @@ body {
 	/* font-family: 'Poppins', sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@apply bg-amber-50 text-slate-800 dark:bg-dark dark:text-slate-50 transition duration-200;
+	@apply bg-amber-50/50 text-slate-800 dark:bg-dark dark:text-slate-50 transition duration-200;
 }
 
 code {
@@ -87,7 +87,7 @@ code {
 		@apply pointer-events-auto;
 	}
 	.educations-item {
-		@apply flex flex-col p-4 border border-slate-300 shadow-md dark:bg-dark dark:border-dark-lightgray dark:hover:border-dark-gray bg-white rounded cursor-pointer transition-all duration-300;
+		@apply p-4 border border-slate-300 shadow-md dark:bg-dark dark:border-dark-lightgray dark:hover:border-dark-gray bg-white rounded cursor-pointer transition-all duration-300;
 	}
 }
 
@@ -96,5 +96,5 @@ code {
 }
 
 .educations:hover > *:hover {
-	@apply opacity-100 scale-110 z-10;
+	@apply opacity-100 z-10;
 }

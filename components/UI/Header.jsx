@@ -100,7 +100,7 @@ const Header = () => {
 				</ul>
 			</div>
 			{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-			<a href="#" className="hidden sm:block">
+			<a href="mailto:reinhardkevin.rk@gmail.com" className="hidden sm:block">
 				Contacts
 			</a>
 		</div>

@@ -2,17 +2,23 @@ import React from "react";
 import Link from "../Link/Link";
 
 import {motion} from "framer-motion";
+import Image from "next/image";
+
 
 const GridHariku = () => {
 	return (
-		<motion.div whileHover={"hover"} className="h-full w-full flex justify-center items-center">
-			<img
-				src="projects/hariku_bg.svg"
+		<motion.div whileHover={"hover"} className="h-full w-full relative flex justify-center items-center">
+			<Image
+				src="/projects/hariku_bg.svg"
+				layout="fill"
+				// objectFit="contain"
 				alt=""
-				className="w-full h-[103%] object-cover -translate-y-1 dark:opacity-30"
+				className="w-full  object-cover dark:opacity-30"
 			/>
-			<img
-				src="projects/hariku.png"
+			<Image
+				src="/projects/hariku.png"
+				layout="fill"
+				// objectFit="contain"
 				alt=""
 				className="absolute w-full h-full object-cover"
 			/>

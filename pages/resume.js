@@ -21,19 +21,19 @@ import WorkExperience from "../components/Resume/WorkExperience/WorkExperience";
 import Skills from "../components/Resume/Skill/Skills";
 import DarkToggler from "../components/UI/DarkToggler";
 import Contact from "../components/Resume/Contacts/Contact";
+import Footer from "../components/UI/Footer";
 
 const ResumePage = () => {
 	const router = useRouter();
 	const [hovered, setHovered] = useState(false);
-	const spring = useSpring(0);
-	const transform = useMotionTemplate`translateY(${spring}px)`;
-	const opacity = useTransform(spring, [0, 10], [1, 0.7]);
+	const translateY = useSpring(0);
+	const opacity = useTransform(translateY, [0, 10], [1, 0.7]);
 
 	useEffect(() => {
 		if (hovered) {
-			spring.set(10);
+			translateY.set(10);
 		} else {
-			spring.set(0);
+			translateY.set(0);
 		}
 	}, [hovered]);
 
@@ -42,20 +42,25 @@ const ResumePage = () => {
 			<Head>
 				<title>Reinhard Kevin - Resume</title>
 			</Head>
-			<div className="fixed bottom-5 right-5 z-10">
+			<div className="fixed top-5 right-5 z-10">
 				<DarkToggler />
 			</div>
 			<motion.button
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}
 				onClick={() => router.push("/")}
+				exit={{ opacity: 0 }}
 				className="text-xl sm:mx-auto m-3 h-11 w-11 rounded-full bg-amber-100 dark:bg-dark-lightgray hover:scale-110 transition-all duration-300 flex justify-center items-center sm:mt-10"
 			>
 				<MdClose />
 			</motion.button>
 			<motion.div
 				className="flex flex-col w-full max-w-screen-lg mx-auto p-3"
-				style={{ transform, opacity }}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ duration: 0.5 }}
+				style={{ translateY, opacity }}
 			>
 				<div className="flex flex-col sm:flex-row mt-4 sm:mt-10 items-center">
 					<Image
@@ -95,11 +100,7 @@ const ResumePage = () => {
 			</motion.div>
 
 			{/* Footer */}
-			<div className="flex justify-center items-center p-4">
-				<p className="text-sm font-medium">
-					<TextHighlight>Reinhard Kevin</TextHighlight> © 2022
-				</p>
-			</div>
+			<Footer />
 		</>
 	);
 };

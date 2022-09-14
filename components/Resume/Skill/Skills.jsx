@@ -19,18 +19,20 @@ import {
 	SiMongodb,
 	SiFlutter,
 	SiRedux,
-  SiTailwindcss,
-  SiChakraui,
-  SiSass,
-  SiPostcss,
-  SiApplemusic,
-  SiAdobepremierepro,
-  SiAdobephotoshop,
-  SiAbletonlive,
-  SiProtools,
+	SiTailwindcss,
+	SiChakraui,
+	SiSass,
+	SiPostcss,
+	SiApplemusic,
+	SiAdobepremierepro,
+	SiAdobephotoshop,
+	SiAbletonlive,
+	SiProtools,
 } from "react-icons/si";
 import StarRating from "../../UI/StarRating";
 import SkillItem from "./SkillItem";
+
+import { motion } from "framer-motion";
 
 const Skills = () => {
 	return (
@@ -40,7 +42,13 @@ const Skills = () => {
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
 				Programming and Markup Language
 			</h2>
-			<ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+			<motion.ul
+				initial={"hidden"}
+				whileInView={"show"}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.05, ease: "linear" }}
+				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
+			>
 				<SkillItem
 					icon={SiJavascript}
 					title={"Javascript"}
@@ -83,16 +91,22 @@ const Skills = () => {
 					rating={3.5}
 					key={"dart"}
 				/>
-			</ul>
+			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
 				Frameworks
 			</h2>
-			<ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+			<motion.ul
+				initial={"hidden"}
+				whileInView={"show"}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.05, ease: "linear" }}
+				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
+			>
 				<SkillItem
 					icon={SiReact}
 					title={"ReactJS"}
-          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
+					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-sky-500"}
 					rating={4.5}
 					key={"react"}
@@ -108,7 +122,7 @@ const Skills = () => {
 					icon={SiExpress}
 					title={"ExpressJS"}
 					className={"bg-gray-800"}
-          certificate={'http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26'}
+					certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
 					rating={4}
 					key={"expressjs"}
 				/>
@@ -116,14 +130,14 @@ const Skills = () => {
 					icon={SiNodedotjs}
 					title={"NodeJS"}
 					className={"bg-emerald-500"}
-          certificate={'http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26'}
+					certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
 					rating={4}
 					key={"nodejs"}
 				/>
 				<SkillItem
 					icon={SiNextdotjs}
 					title={"NextJS"}
-          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
+					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-gray-800"}
 					rating={4}
 					key={"nodejs"}
@@ -138,17 +152,23 @@ const Skills = () => {
 				<SkillItem
 					icon={SiRedux}
 					title={"Redux"}
-          certificate={'http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465'}
+					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-purple-500"}
 					rating={4}
 					key={"redux"}
 				/>
-			</ul>
+			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
 				CSS Framework
 			</h2>
-			<ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+			<motion.ul
+				initial={"hidden"}
+				whileInView={"show"}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.05, ease: "linear" }}
+				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
+			>
 				<SkillItem
 					icon={SiTailwindcss}
 					title={"TailwindCSS"}
@@ -170,12 +190,18 @@ const Skills = () => {
 					rating={4}
 					key={"sass"}
 				/>
-			</ul>
+			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
 				Database
 			</h2>
-			<ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+			<motion.ul
+				initial={"hidden"}
+				whileInView={"show"}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.05, ease: "linear" }}
+				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
+			>
 				<SkillItem
 					icon={SiMysql}
 					title={"MySQL"}
@@ -197,12 +223,18 @@ const Skills = () => {
 					rating={4}
 					key={"sequelize"}
 				/>
-			</ul>
+			</motion.ul>
 
-      <h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
-        Miscellaneous
-      </h2>
-      <ul className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
+				Miscellaneous
+			</h2>
+			<motion.ul
+				initial={"hidden"}
+				whileInView={"show"}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.05, ease: "linear" }}
+				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
+			>
 				<SkillItem
 					icon={SiAbletonlive}
 					title={"Music Production"}
@@ -231,7 +263,7 @@ const Skills = () => {
 					rating={4}
 					key={"design"}
 				/>
-      </ul>
+			</motion.ul>
 		</div>
 	);
 };
