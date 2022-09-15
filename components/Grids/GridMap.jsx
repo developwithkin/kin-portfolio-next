@@ -6,10 +6,16 @@ import { motion, useAnimationControls } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 import Image from "next/image";
 
+import { useFilter } from "../../context/FilterContext";
+import { FILTER } from "../../constants/FilterConstants";
+
 const GridMap = () => {
 	const [isHovered, setIsHovered] = useState(false);
 	const img_ctrl = useAnimationControls();
 	const { darkMode } = useTheme();
+
+	const { filter } = useFilter();
+	const visible = filter === FILTER.ALL || filter === FILTER.ABOUT;
 
 	const variants = {
 		hover: {
@@ -44,7 +50,7 @@ const GridMap = () => {
 	return (
 		<motion.div
 			whileHover={"hover"}
-			className="w-full h-full relative"
+			className={`w-full h-full relative transition-opacity ${!visible && "opacity-25"}`}
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 		>
@@ -63,12 +69,8 @@ const GridMap = () => {
 				layout="fill"
 				src={
 					darkMode
-						? `https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/106.975969,-6.259513,14,0,40/360x360?access_token=${
-								process.env.NEXT_PUBLIC_MAPBOX_TOKEN
-						  }&attribution=false&logo=false`
-						: `https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/106.975969,-6.259513,14,0,40/360x360?access_token=${
-								process.env.NEXT_PUBLIC_MAPBOX_TOKEN
-						  }&attribution=false&logo=false`
+						? `https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/106.975969,-6.259513,14,0,40/360x360?access_token=${process.env.NEXT_PUBLIC_MAPBOX_TOKEN}&attribution=false&logo=false`
+						: `https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/106.975969,-6.259513,14,0,40/360x360?access_token=${process.env.NEXT_PUBLIC_MAPBOX_TOKEN}&attribution=false&logo=false`
 				}
 				alt=""
 			/>

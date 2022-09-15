@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { ImArrowUpRight2 } from "react-icons/im";
 
+import { useFilter } from "../../context/FilterContext";
+import { FILTER } from "../../constants/FilterConstants"
+
 import Link from "next/link";
 
 const GridResume = () => {
+	const { filter } = useFilter()
+	const visible = filter === FILTER.ALL || filter === FILTER.MEDIA
+
 	return (
-		<div className="w-full h-full p-12 flex flex-col justify-between">
+		<div className={`w-full h-full p-12 flex flex-col justify-between transition-opacity ${!visible && "opacity-25"}`}>
 			<div className="">
 				<h1 className="font-moranga text-2xl">Resume - More about me</h1>
 				<p className="">

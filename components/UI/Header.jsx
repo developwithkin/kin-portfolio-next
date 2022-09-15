@@ -4,7 +4,7 @@ import { motion, useMotionValue, useMotionTemplate, useSpring } from "framer-mot
 
 import { FILTER } from "../../constants/FilterConstants";
 import { useFilter } from "../../context/FilterContext";
-import Logo from "../assets/reilogo.svg";
+import Logo from "../Assets/reilogo.svg";
 
 const Header = () => {
 	const [menuIdx, setMenuIdx] = useState(0);

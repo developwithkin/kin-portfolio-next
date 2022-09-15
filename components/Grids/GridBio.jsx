@@ -4,24 +4,18 @@ import { TbRepeat } from "react-icons/tb";
 
 import { motion, useAnimationControls } from "framer-motion";
 
+import { useFilter } from "../../context/FilterContext";
+import { FILTER } from "../../constants/FilterConstants";
+
 const GridBio = () => {
 	const [excited, setExcited] = useState(true);
 
-	// const styles = useSpring({
-	// 	opacity: 1,
-	// 	scale: 1,
-	// 	rotate: 0,
-	// });
-
 	const avatar_ctrl = useAnimationControls();
 
+	const {filter} = useFilter()
+	const visible = filter === FILTER.ALL || filter === FILTER.ABOUT
+
 	const handleExcitement = async () => {
-		// console.log("clicked")
-		// styles.scale.start({ to: 0 })
-		// styles.rotate.start({ to: 90 })
-		// await styles.opacity.start({ to: 0 })
-		// setExcited(prev => !prev)
-		// styles.opacity.start({ to: 1 });
 
 		await avatar_ctrl.start({
 			rotate: 60,
@@ -43,7 +37,7 @@ const GridBio = () => {
 	};
 
 	return (
-		<div className="p-8 md:p-12 flex flex-col h-full justify-between">
+		<div className={`p-8 md:p-12 flex flex-col h-full justify-between transition-opacity ${!visible && "opacity-25"}`}>
 			<button
 				onClick={handleExcitement}
 				className="z-10 absolute right-10 top-10 py-2 px-4 rounded-full shadow-border-light dark:shadow-border-dark font-medium hover:shadow-border-light-outer dark:hover:shadow-border-dark-outer transition-all duration-300 flex items-center"

@@ -2,14 +2,20 @@ import React from "react";
 import useSWR from "swr";
 import axios from "axios";
 import Image from "next/image";
+import { useFilter } from "../../context/FilterContext";
+import { FILTER } from "../../constants/FilterConstants";
+
 
 const GridSpotify = ({ spotifyPlaying }) => {
+	const { filter } = useFilter()
+	const visible = filter === FILTER.MEDIA || filter === FILTER.ALL
+	
 	const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 	const { data, error } = useSWR("/api/spotify", fetcher);
 
 	return (
-		<div className="h-full w-full p-7 md:p-8 flex flex-col items-start justify-between">
+		<div className={`h-full w-full p-7 md:p-8 flex flex-col items-start justify-between transition-opacity ${!visible && "opacity-25"}`}>
 			<div className="absolute album-cover">
 				<div className="relative flex w-full h-full">
 					<Image

@@ -4,9 +4,15 @@ import { motion } from 'framer-motion'
 import Link from '../Link/Link'
 import Image from 'next/image'
 
+import { useFilter } from '../../context/FilterContext'
+import { FILTER } from "../../constants/FilterConstants"
+
 const GridTimes = () => {
+	const { filter } = useFilter()
+	const visible = filter === FILTER.ALL || filter === FILTER.PROJECTS
+
   return (
-    <motion.div whileHover={"hover"} className="h-full w-full relative flex justify-center items-center">
+    <motion.div whileHover={"hover"} className={`h-full w-full relative flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}>
 			<Image
 				src="/projects/times_bg.svg"
 				layout="fill"

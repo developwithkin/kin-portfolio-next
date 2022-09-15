@@ -42,7 +42,7 @@ const ResumePage = () => {
 			<Head>
 				<title>Reinhard Kevin - Resume</title>
 			</Head>
-			<div className="fixed top-5 right-5 z-10">
+			<div className="fixed top-5 right-5 z-50">
 				<DarkToggler />
 			</div>
 			<motion.button

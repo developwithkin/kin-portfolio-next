@@ -2,24 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "../Link/Link";
 
-const Grid2521 = () => {
-	// const variants = {
-	// 	hover: {
-	// 		width: "auto",
-	// 	},
-	// };
+import { useFilter } from "../../context/FilterContext";
+import { FILTER } from "../../constants/FilterConstants";
 
-	// const text_variants = {
-	// 	hover: {
-	// 		transform: "translateX(0px)",
-	// 		opacity: 1,
-	// 	},
-	// };
+const GridGithub = () => {
+	const { filter } = useFilter()
+	const visible = filter === FILTER.ALL || filter === FILTER.ABOUT
 
 	return (
 		<motion.div
 			whileHover={"hover"}
-			className="bg-[#1B1F23] h-full w-full flex justify-center items-center"
+			className={`bg-[#1B1F23] h-full w-full flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}
 		>
 			<img src="github.svg" alt="github-logo" className="h-20" />
       <Link 
@@ -47,4 +40,4 @@ const Grid2521 = () => {
 	);
 };
 
-export default Grid2521;
+export default GridGithub;
