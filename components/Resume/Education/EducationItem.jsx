@@ -29,7 +29,7 @@ const EducationItem = ({ year, school, course, grade, logo }) => {
 			variants={variants}
 		>
 			<div className="relative w-12 mr-2">
-				<Image src={logo} layout="fill" objectFit="contain" alt={"logo"} />
+				<Image src={logo} layout="fill" placeholder="blur" objectFit="contain" alt={"logo"} />
 			</div>
 			<div>
 				<p>{year}</p>
