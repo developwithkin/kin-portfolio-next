@@ -102,8 +102,8 @@ const Header = () => {
 				</ul>
 			</div>
 			{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-			<Link href="/resume" className="hidden sm:block">
-				<span className="flex items-center gap-1 hover:underline font-medium cursor-pointer">
+			<Link href="/resume">
+				<span className="hidden sm:flex items-center gap-1 hover:underline font-medium cursor-pointer">
 					<RiProfileLine />
 					Resume
 				</span>
