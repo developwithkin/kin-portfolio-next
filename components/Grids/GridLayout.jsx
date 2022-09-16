@@ -1,5 +1,7 @@
-import React from "react";
-import { Responsive as ResponsiveGridLayout } from "react-grid-layout";
+import React, { useEffect, useState } from "react";
+import { Responsive, WidthProvider } from "react-grid-layout";
+
+const ResponsiveGridLayout = WidthProvider(Responsive);
 
 import { useFilter } from "../../context/FilterContext";
 import useDimension from "../../hooks/useDimension";
@@ -28,7 +30,7 @@ const MainGrid = () => {
 				{ i: "spotify", x: 0, y: 1, w: 1, h: 1 },
 				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
-				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "times", x: 0, y: 3, w: 2, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -197,9 +199,10 @@ const MainGrid = () => {
 				}}
 				isResizable={false}
 				isBounded={true}
+				measureBeforeMount={true}
 				useCSSTransforms={true}
+
 			>
-				{/* <div key={"bio"} >a</div> */}
 				<div key={"bio"} className="grid-item">
 					<GridBio />
 				</div>

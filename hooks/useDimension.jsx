@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useDimension = () => {
-	const [breakpoint, setBreakpoint] = useState();
+	const [breakpoint, setBreakpoint] = useState("lg");
 	const [windowSize, setWindowSize] = useState({});
 
 	const resizeHandler = () => {
