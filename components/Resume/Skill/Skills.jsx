@@ -140,7 +140,7 @@ const Skills = () => {
 					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-gray-800"}
 					rating={4}
-					key={"nodejs"}
+					key={"nextjs"}
 				/>
 				<SkillItem
 					icon={SiFlutter}
@@ -188,7 +188,7 @@ const Skills = () => {
 					title={"PostCSS"}
 					className={"bg-pink-500"}
 					rating={4}
-					key={"sass"}
+					key={"postcss"}
 				/>
 			</motion.ul>
 
@@ -247,7 +247,7 @@ const Skills = () => {
 					title={"Audio Production"}
 					className={"bg-red-500"}
 					rating={4}
-					key={"music"}
+					key={"audio"}
 				/>
 				<SkillItem
 					icon={SiAdobepremierepro}

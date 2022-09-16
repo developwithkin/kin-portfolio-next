@@ -22,6 +22,7 @@ import Skills from "../components/Resume/Skill/Skills";
 import DarkToggler from "../components/UI/DarkToggler";
 import Contact from "../components/Resume/Contacts/Contact";
 import Footer from "../components/UI/Footer";
+import withTransition from "../HOC/withTransition";
 
 const ResumePage = () => {
 	const router = useRouter();
@@ -105,4 +106,4 @@ const ResumePage = () => {
 	);
 };
 
-export default ResumePage;
+export default withTransition(ResumePage);

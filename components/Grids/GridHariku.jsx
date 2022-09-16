@@ -7,6 +7,8 @@ import { FILTER } from "../../constants/FilterConstants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import Hariku from "../../public/projects/hariku.png";
+
 const GridHariku = () => {
 	const { filter } = useFilter();
 	const visible = filter === FILTER.ALL || filter === FILTER.PROJECTS;
@@ -24,10 +26,11 @@ const GridHariku = () => {
 				// objectFit="contain"
 				alt=""
 				className="w-full  object-cover dark:opacity-30"
-			/>
+				/>
 			<Image
-				src="/projects/hariku.png"
+				src={Hariku}
 				layout="fill"
+				placeholder="blur"
 				// objectFit="contain"
 				alt=""
 				className="absolute w-full h-full object-cover"

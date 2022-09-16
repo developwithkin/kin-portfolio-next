@@ -7,6 +7,8 @@ import Image from "next/image";
 import { useFilter } from "../../context/FilterContext";
 import { FILTER } from "../../constants/FilterConstants";
 
+import Bot2521 from "../../public/projects/2521.png";
+
 const Grid2521 = () => {
 	const { filter } = useFilter();
 	const visible = filter === FILTER.ALL || filter === FILTER.PROJECTS
@@ -21,9 +23,10 @@ const Grid2521 = () => {
 				layout="fill"
 				alt=""
 				className="w-full object-cover dark:opacity-30"
-			/>
+				/>
 			<Image
-				src="/projects/2521.png"
+				src={Bot2521}
+				placeholder="blur"
 				layout="fill"
 				alt=""
 				className="absolute w-full h-full object-cover"
