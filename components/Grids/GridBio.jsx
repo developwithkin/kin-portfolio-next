@@ -43,7 +43,7 @@ const GridBio = () => {
 				className="z-10 absolute right-10 top-10 py-2 px-4 rounded-full shadow-border-light dark:shadow-border-dark font-medium hover:shadow-border-light-outer dark:hover:shadow-border-dark-outer transition-all duration-300 flex items-center"
 			>
 				<TbRepeat className="w-4 h-4 mr-1" />
-				<p className="text-sm">Toggle PSBB!</p>
+				<p className="text-sm">{excited ? "Found a Bug!" : "Solved It!"}</p>
 			</button>
 			<motion.img
 				src={excited ? "avatar-2.png" : "avatar-1.png"}

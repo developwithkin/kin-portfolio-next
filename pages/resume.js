@@ -67,6 +67,7 @@ const ResumePage = () => {
 					<Image
 						src={headshot}
 						alt="profile picture"
+						placeholder="blur"
 						width="150px"
 						height="150px"
 						className="rounded-full"

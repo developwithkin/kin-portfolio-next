@@ -9,6 +9,7 @@ import LoadingText from "../components/UI/LoadingText";
 import { useCallback, useEffect } from "react";
 import nProgress from "nprogress";
 import "nprogress/nprogress.css";
+import "../styles/nprogress-custom-style.css"
 
 Router.events.on("routeChangeStart", () => { nProgress.start(); });
 Router.events.on("routeChangeComplete", () => { nProgress.done(); });

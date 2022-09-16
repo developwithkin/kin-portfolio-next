@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
 import { motion, useMotionValue, useMotionTemplate, useSpring } from "framer-motion";
+import { RiProfileLine } from "react-icons/ri";
 
 import { FILTER } from "../../constants/FilterConstants";
 import { useFilter } from "../../context/FilterContext";
 import Logo from "../Assets/reilogo.svg";
+import Link from "next/link";
 
 const Header = () => {
 	const [menuIdx, setMenuIdx] = useState(0);
@@ -100,9 +102,12 @@ const Header = () => {
 				</ul>
 			</div>
 			{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-			<a href="mailto:reinhardkevin.rk@gmail.com" className="hidden sm:block">
-				Contacts
-			</a>
+			<Link href="/resume" className="hidden sm:block">
+				<span className="flex items-center gap-1 hover:underline font-medium cursor-pointer">
+					<RiProfileLine />
+					Resume
+				</span>
+			</Link>
 		</div>
 	);
 };
