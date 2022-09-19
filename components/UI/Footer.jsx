@@ -7,7 +7,7 @@ const Footer = () => {
 				Made with 💖 and ☕ by{" "}
 				<span className="font-moranga">Reinhard Kevin</span>
 			</p>
-			<p className="font-normal">
+			<p className="font-normal text-xs text-slate-500">
 				Inspired by:
 				<a href="https://nevflynn.com/" target="_blank" rel="noreferrer">
 					{" "}
