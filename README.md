@@ -1,6 +1,6 @@
 # Reinhard New Resume Website
 
-inspired by [Nevlynn's](nevflynn.com) using [React Grid Layout](https://github.com/react-grid-layout/react-grid-layout)
+inspired by [Nevlynn's](https://nevflynn.com) using [React Grid Layout](https://github.com/react-grid-layout/react-grid-layout)
 
 ## Getting Started
 
