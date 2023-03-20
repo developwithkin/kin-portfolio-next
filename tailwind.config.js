@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         'dark': "#090c10",
         'dark-lightgray': "#21262d",
-        'dark-gray': "#30363d"
+        'dark-gray': "#30363d",
+        // "amber-dark": "rgb(245 158 11 / 0.5)",
       },
       boxShadow: {
         'border-dark': "0px 0px 0px 2px rgba(48, 54, 61, 1)",

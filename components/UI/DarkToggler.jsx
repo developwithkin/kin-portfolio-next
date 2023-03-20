@@ -10,15 +10,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 const DarkToggler = () => {
   const {darkMode, toggleTheme} = useTheme()
 
-	const toggleDarkMode = () => {
-		toggleTheme();
-	};
-
   return (
     <div
 				className="cursor-pointer w-20 h-12 p-1 bg-slate-500/20 shadow-border-light backdrop-blur-sm dark:bg-dark-lightgray dark:shadow-border-dark rounded-full relative flex items-center"
         style={{ justifyContent: darkMode ? "flex-end" : "flex-start" }}
-				onClick={toggleDarkMode}
+				onClick={toggleTheme}
 			>
 				<motion.div
 					className="w-9 h-9 rounded-full bg-dark flex justify-center items-center"

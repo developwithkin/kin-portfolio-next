@@ -26,7 +26,7 @@ const GridResume = () => {
 						Read More
 					</a>
 				</Link>
-				<span className="text-slate-500">Sep 07, 2022</span>
+				<span className="text-slate-500">Mar 07, 2023</span>
 			</div>
 		</div>
 	);

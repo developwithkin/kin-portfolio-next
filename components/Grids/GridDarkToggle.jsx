@@ -16,10 +16,6 @@ const GridDarkToggle = () => {
 	const { filter } = useFilter();
 	const visible = filter === FILTER.ALL;
 
-	const toggleDarkMode = () => {
-		toggleTheme();
-	};
-
 	return (
 		<div className={`h-full w-full flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}>
 			<DarkToggler />

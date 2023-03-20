@@ -14,6 +14,8 @@ import GridSpotify from "./GridSpotify";
 import GridDarkToggle from "./GridDarkToggle";
 import GridResume from "./GridResume";
 import GridTimes from "./GridTimes";
+import GridCucipiring from "./GridCucipiring"
+import GridContacts from "./GridContacts";
 
 const MainGrid = () => {
 	const { breakpoint } = useDimension();
@@ -31,6 +33,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "times", x: 0, y: 3, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 2, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -42,6 +46,8 @@ const MainGrid = () => {
 				{ i: "github", x: 1, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
 				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 3, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -52,7 +58,9 @@ const MainGrid = () => {
 				{ i: "spotify", x: 0, y: 6, w: 2, h: 2 },
 				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
-				{ i: "times", x: 0, y: 9, w: 2, h: 1 },
+				{ i: "times", x: 0, y: 6, w: 2, h: 1 },
+				{ i: "cucipiring", x: 0, y: 5, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 7, w: 2, h: 2 },
 			],
 		},
 		about: {
@@ -66,6 +74,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 1, y: 1, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 1, w: 2, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -77,6 +87,8 @@ const MainGrid = () => {
 				{ i: "github", x: 3, y: 0, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
 				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 1, w: 3, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -88,6 +100,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 9, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 1, w: 2, h: 2},
 			],
 		},
 		projects: {
@@ -101,6 +115,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "times", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "cucipiring", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "contacts", x: 2, y: 4, w: 2, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -112,6 +128,8 @@ const MainGrid = () => {
 				{ i: "github", x: 1, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "cucipiring", x: 0, y: 0, w: 2, h: 1 },
+				{ i: "contacts", x: 2, y: 4, w: 3, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 3, w: 2, h: 2 },
@@ -123,6 +141,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 1, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "cucipiring", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 2, h: 2 },
 			],
 		},
 		media: {
@@ -136,6 +156,8 @@ const MainGrid = () => {
 				{ i: "dark-toggle", x: 3, y: 2, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 2, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -144,20 +166,24 @@ const MainGrid = () => {
 				{ i: "2521", x: 2, y: 1, w: 1, h: 2 },
 				{ i: "spotify", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "dark-toggle", x: 1, y: 3, w: 1, h: 1 },
-				{ i: "github", x: 1, y: 5, w: 1, h: 1 },
+				{ i: "github", x: 3, y: 5, w: 1, h: 1 },
 				{ i: "cv", x: 2, y: 0, w: 2, h: 2 },
-				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "times", x: 0, y: 3, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 3, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 4, w: 2, h: 2 },
 				{ i: "map", x: 0, y: 4, w: 2, h: 1 },
 				{ i: "github", x: 0, y: 3, w: 1, h: 1 },
-				{ i: "hariku", x: 1, y: 3, w: 1, h: 2 },
+				{ i: "hariku", x: 1, y: 2, w: 1, h: 2 },
 				{ i: "2521", x: 0, y: 5, w: 1, h: 2 },
 				{ i: "spotify", x: 0, y: 0, w: 2, h: 2 },
 				{ i: "dark-toggle", x: 0, y: 3, w: 1, h: 1 },
 				{ i: "cv", x: 0, y: 2, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 4, w: 2, h: 1 },
+				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 2, h: 2 },
 			],
 		},
 	};
@@ -218,6 +244,9 @@ const MainGrid = () => {
 				<div key={"github"} className="grid-item">
 					<GridGithub />
 				</div>
+				<div key={"contacts"} className="grid-item">
+					<GridContacts />
+				</div>
 				<div key={"spotify"} className="grid-item">
 					<GridSpotify />
 				</div>
@@ -230,7 +259,9 @@ const MainGrid = () => {
 				<div key={"times"} className="grid-item">
 					<GridTimes />
 				</div>
-
+				<div key={"cucipiring"} className="grid-item">
+					<GridCucipiring />
+				</div>
 			</ResponsiveGridLayout>
 		</div>
 	);
