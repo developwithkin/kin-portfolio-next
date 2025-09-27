@@ -1,4 +1,4 @@
-# Reinhard New Resume Website
+# Nico New Resume Website
 
 inspired by [Nevlynn's](https://nevflynn.com) using [React Grid Layout](https://github.com/react-grid-layout/react-grid-layout)
 
