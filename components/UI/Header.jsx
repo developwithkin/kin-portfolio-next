@@ -5,7 +5,7 @@ import { RiProfileLine } from "react-icons/ri";
 
 import { FILTER } from "../../constants/FilterConstants";
 import { useFilter } from "../../context/FilterContext";
-import Logo from "../Assets/reilogo.svg";
+import Logo from "../Assets/kinlogo.svg";
 import Link from "next/link";
 
 const Header = () => {

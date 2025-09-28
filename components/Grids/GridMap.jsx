@@ -59,7 +59,7 @@ const GridMap = () => {
 				variants={variants}
 			>
 				<motion.img
-					src="avatar-2.png"
+					src="memoji-smile.png"
 					alt=""
 					className="h-12"
 					animate={img_ctrl}

@@ -21,7 +21,7 @@ const GridSpotify = ({ spotifyPlaying }) => {
 					<Image
 						src={
 							data?.albumImageUrl ||
-							"https://i.scdn.co/image/ab67616d0000b273c3040848e6ef0e132c5c8340"
+							"https://i.scdn.co/image/ab67616d0000b2732220ffd62c9d87ce909bc6c5"
 						}
 						layout="fill"
 						objectFit="cover"
@@ -42,13 +42,13 @@ const GridSpotify = ({ spotifyPlaying }) => {
 				</div>
 				<a
 					className="font-moranga text-3xl sm:text-2xl hover:opacity-50 duration-300 leading-tight"
-					href={data?.songUrl || "https://open.spotify.com/track/0RDqNCRBGrSegk16Avfzuq"}
+					href={data?.songUrl || "https://open.spotify.com/track/3dJ7UMUUxqaJmsDAFiKB4L"}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					{data?.title || "Talk that Talk"}
+					{data?.title || "Too Late to Say"}
 				</a>
-				<p className="leading-none">{data?.artist || "TWICE"}</p>
+				<p className="leading-none">{data?.artist || "State Champs"}</p>
 			</div>
 		</div>
 	);

@@ -29,14 +29,14 @@ const GridContacts = () => {
 					)}
 				>
 					<a
-						href={"https://instagram.com/reinhaaard13"}
+						href={"https://www.instagram.com/nicodemusaveiro/"}
 						target="_blank"
 						rel="noreferrer"
             className="flex flex-col items-center mx-auto"
 					>
 						<img src="instagram_color.svg" alt="github-logo" className="h-10" />
 						<p className="font-medium text-white group-hover:underline group-hover:-skew-y-2 transition-all duration-200 decoration-amber-500">
-							@reinhaaard13
+							@nicodemusaveiro
 						</p>
 						<ImArrowUpRight2 className="absolute right-0 top-0 mr-2 mt-2 text-white transition-all duration-300 opacity-0 translate-y-4 group-hover:translate-y-0 group-hover:opacity-100" />
 					</a>
@@ -52,14 +52,14 @@ const GridContacts = () => {
 					)}
 				>
 					<a
-						href={"mailto:reinhardkevin.rk@gmail.com"}
+						href={"mailto:developwithkin@gmail.com"}
 						target="_blank"
 						rel="noreferrer"
             className="flex flex-col items-center mx-auto"
 					>
 						<img src="gmail.svg" alt="gmail-logo" className="h-8" />
 						<p className="font-medium group-hover:underline group-hover:-skew-y-2 transition-all duration-200 decoration-amber-500">
-							reinhardkevin.rk@gmail.com
+							developwithkin@gmail.com
 						</p>
 						<ImArrowUpRight2
 							className={cx(
@@ -77,14 +77,14 @@ const GridContacts = () => {
 					)}
 				>
 					<a
-						href={"https://www.linkedin.com/in/reinhaaard13/"}
+						href={"https://www.linkedin.com/in/nicodemus-bagus/"}
 						target="_blank"
 						rel="noreferrer"
             className="flex flex-col items-center mx-auto"
 					>
 						<img src="linkedin.png" alt="github-logo" className="h-10" />
 						<p className="font-medium text-white group-hover:underline group-hover:-skew-y-2 transition-all duration-200 decoration-amber-500">
-							Reinhard Kevin
+							Nicodemus Bagus
 						</p>
 						<ImArrowUpRight2
 							className={cx(
@@ -101,7 +101,7 @@ const GridContacts = () => {
 					)}
 				>
 					<a
-						href={"https://wa.me/628119251301"}
+						href={"https://wa.me/628527285599"}
 						target="_blank"
 						rel="noreferrer"
             className="flex flex-col items-center mx-auto"
@@ -112,7 +112,7 @@ const GridContacts = () => {
 							className="h-10"
 						/>
 						<p className="font-medium text-white group-hover:underline group-hover:-skew-y-2 transition-all duration-200 decoration-amber-500">
-							+62 811 925 1301
+							+62 852 2728 5599
 						</p>
 						<ImArrowUpRight2
 							className={cx(

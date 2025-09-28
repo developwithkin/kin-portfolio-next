@@ -46,13 +46,13 @@ const GridBio = () => {
 				<p className="text-sm">{excited ? "Found a Bug!" : "Solved It!"}</p>
 			</button>
 			<motion.img
-				src={excited ? "avatar-2.png" : "avatar-1.png"}
+				src={excited ? "memoji-sad.png" : "memoji-smile.png"}
 				alt="avatar"
 				animate={avatar_ctrl}
 				className="w-fit h-28"
 			/>
 			<p className="tracking-wide">
-				I am <span className="font-moranga text-3xl">rei</span>, a developer
+				I am <span className="font-moranga text-3xl">Nico</span>, a developer
 				based in Jakarta, Indonesia. I develop web and mobile based
 				applications. I work with React, React Native, Node, Express, and MySQL
 				or MongoDB.

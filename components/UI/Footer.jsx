@@ -5,7 +5,7 @@ const Footer = () => {
 		<div className="flex flex-col justify-center items-center p-4 text-sm font-medium dark:border dark:border-dark-lightgray mt-4">
 			<p>
 				Made with 💖 and ☕ by{" "}
-				<span className="font-moranga">Reinhard Kevin</span>
+				<span className="font-moranga">Developwithkin</span>
 			</p>
 			<p className="font-normal text-xs text-slate-500">
 				Inspired by: neflynn.com
