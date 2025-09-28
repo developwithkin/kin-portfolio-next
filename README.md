@@ -14,6 +14,7 @@ yarn dev
 ```
 
 ## Tech Stack
+
 - [Next.js](https://nextjs.org/)
 - [React Grid Layout](https://github.com/react-grid-layout/react-grid-layout)
 - [Tailwind CSS](https://tailwindcss.com/)
