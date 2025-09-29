@@ -3,7 +3,7 @@ import SectionTitle from "../../UI/SectionTitle";
 import TextHighlight from "../../UI/TextHighlight";
 import EducationItem from "./EducationItem";
 
-import kalbisLogo from "../../../public/logo-unisbank.png";
+import kalbisLogo from "../../../public/unisbank-logo.png";
 import mahanaimLogo from "../../../public/logo-grafika.png";
 
 import { motion } from "framer-motion";
