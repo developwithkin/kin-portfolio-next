@@ -31,12 +31,13 @@ const ResumePage = () => {
 	const opacity = useTransform(translateY, [0, 10], [1, 0.7]);
 
 	useEffect(() => {
-		if (hovered) {
-			translateY.set(10);
-		} else {
-			translateY.set(0);
-		}
-	}, [hovered]);
+  if (hovered) {
+    translateY.set(10);
+  } else {
+    translateY.set(0);
+  }
+}, [hovered, translateY]);
+
 
 	return (
 		<>

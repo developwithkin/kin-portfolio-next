@@ -52,9 +52,9 @@ const GridBio = () => {
 				className="w-fit h-28"
 			/>
 			<p className="tracking-wide">
-				I am <span className="font-moranga text-3xl">Nico</span>, a developer and designer 
+				I&apos;m <span className="font-moranga text-3xl">Nico</span>, a developer and designer 
 				based in Jakarta, Indonesia. 
-				I'm interested in React, Node, Product Design, Sports, Cryptocurrencies and Music.
+				I&apos;m interested in React, Node, Product Design, Sports, Cryptocurrencies and Music.
 			</p>
 		</div>
 	);

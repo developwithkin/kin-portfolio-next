@@ -11,7 +11,7 @@ const AboutMe = () => {
 			<SectionTitle href="#about">About Me</SectionTitle>
 			<p className="text-justify mt-2">
 				My name is <span className="font-moranga">Nicodemus Bagus Adi Kusuma Dahni Sualang</span>, or you
-				can call me <span className="font-moranga">Nico</span>. I'm a <TextHighlight>Developer</TextHighlight> and <TextHighlight>Designer</TextHighlight>  who loves turning ideas into interactive and creative digital experiences.{" "} I
+				can call me <span className="font-moranga">Nico</span>. I&apos;m a <TextHighlight>Developer</TextHighlight> and <TextHighlight>Designer</TextHighlight>  who loves turning ideas into interactive and creative digital experiences.{" "} I
 				focused myself in learning design and web development. The
 				main programming language I explore is{" "}
 				<TextHighlight>
