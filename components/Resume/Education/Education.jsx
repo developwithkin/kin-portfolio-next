@@ -3,8 +3,8 @@ import SectionTitle from "../../UI/SectionTitle";
 import TextHighlight from "../../UI/TextHighlight";
 import EducationItem from "./EducationItem";
 
-import kalbisLogo from "../../../public/kalbis-vertical.png";
-import mahanaimLogo from "../../../public/mahanaim.png";
+import kalbisLogo from "../../../public/logo-unisbank.png";
+import mahanaimLogo from "../../../public/logo-grafika.png";
 
 import { motion } from "framer-motion";
 
@@ -21,17 +21,17 @@ const Education = () => {
 				className="grid grid-cols-1 sm:grid-cols-2 gap-2 educations mt-2"
 			>
 				<EducationItem
-					school={"SMA Mahanaim"}
-					course={"Science Course"}
+					school={"SMKN 11 Semarang"}
+					course={"Grafika"}
 					logo={mahanaimLogo}
-					year={"2016-2019"}
+					year={"2013-2015"}
 				/>
 				<EducationItem
-					school={"Kalbis Institute"}
-					course={"Computer Science - Mobile Computing"}
-					year={"2019-2023 (present)"}
+					school={"Universitas Stikubank"}
+					course={"Bachelor Program of Information System"}
+					year={"2018-2022 (present)"}
 					logo={kalbisLogo}
-					grade={"3.97"}
+					//grade={"3.97"}
 				/>
 			</motion.div>
 		</div>

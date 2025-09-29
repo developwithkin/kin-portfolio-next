@@ -7,7 +7,7 @@ import { FILTER } from "../../constants/FilterConstants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import Hariku from "../../public/projects/hariku.png";
+import Hariku from "../../public/projects/disaster.png";
 
 const GridHariku = () => {
 	const { filter } = useFilter();
@@ -21,7 +21,7 @@ const GridHariku = () => {
 			}`}
 		>
 			<Image
-				src="/projects/hariku_bg.svg"
+				src="/projects/novatech-bg.svg"
 				layout="fill"
 				// objectFit="contain"
 				alt=""
@@ -36,8 +36,8 @@ const GridHariku = () => {
 				className="absolute w-full h-full object-cover"
 			/>
 			<Link
-				label="Hariku Diary"
-				href="https://github.com/reinhaaard13/Hariku-App"
+				label="Disaster Management App"
+				href="https://bit.ly/dvk-disaster-dsgn"
 			/>
 		</motion.div>
 	);

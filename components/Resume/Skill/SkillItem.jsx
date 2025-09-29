@@ -26,7 +26,8 @@ const SkillItem = ({ icon: Icon, title, rating, className, certificate }) => {
 					<Icon />
 					<p>{title}</p>
 				</div>
-				<StarRating rating={rating} />
+				{/* <StarRating rating={rating} /> */}
+
 			</div>
 			{certificate && (
 				<a

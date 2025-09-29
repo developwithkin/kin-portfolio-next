@@ -24,10 +24,13 @@ import {
 	SiSass,
 	SiPostcss,
 	SiApplemusic,
+	SiAdobeillustrator,
 	SiAdobepremierepro,
 	SiAdobephotoshop,
+	SiAdobelightroom,
 	SiAbletonlive,
 	SiProtools,
+	SiLaravel,
 } from "react-icons/si";
 import StarRating from "../../UI/StarRating";
 import SkillItem from "./SkillItem";
@@ -56,13 +59,13 @@ const Skills = () => {
 					rating={4.5}
 					key={"js"}
 				/>
-				<SkillItem
-					icon={SiPython}
-					title={"Python"}
-					className={"bg-yellow-500"}
-					rating={4}
-					key={"py"}
-				/>
+				{/* <SkillItem
+  icon={SiPython}
+  title={"Python"}
+  className={"bg-yellow-500"}
+  rating={4}
+  key={"py"}
+/> */}
 				<SkillItem
 					icon={SiCss3}
 					title={"CSS3"}
@@ -84,13 +87,13 @@ const Skills = () => {
 					rating={4}
 					key={"ts"}
 				/>
-				<SkillItem
+				{/*<SkillItem
 					icon={SiDart}
 					title={"Dart"}
 					className={"bg-sky-400"}
 					rating={3.5}
 					key={"dart"}
-				/>
+				/>*/}
 			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
@@ -106,7 +109,7 @@ const Skills = () => {
 				<SkillItem
 					icon={SiReact}
 					title={"ReactJS"}
-					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
+					//certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-sky-500"}
 					rating={4.5}
 					key={"react"}
@@ -122,7 +125,7 @@ const Skills = () => {
 					icon={SiExpress}
 					title={"ExpressJS"}
 					className={"bg-gray-800"}
-					certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
+					//certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
 					rating={4}
 					key={"expressjs"}
 				/>
@@ -130,14 +133,14 @@ const Skills = () => {
 					icon={SiNodedotjs}
 					title={"NodeJS"}
 					className={"bg-emerald-500"}
-					certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
+					//certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
 					rating={4}
 					key={"nodejs"}
 				/>
 				<SkillItem
 					icon={SiNextdotjs}
 					title={"NextJS"}
-					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
+					//certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-gray-800"}
 					rating={4}
 					key={"nextjs"}
@@ -152,10 +155,17 @@ const Skills = () => {
 				<SkillItem
 					icon={SiRedux}
 					title={"Redux"}
-					certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
+					//certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
 					className={"bg-purple-500"}
 					rating={4}
 					key={"redux"}
+				/>
+				<SkillItem
+					icon={SiLaravel}
+					title={"Laravel"}
+					className={"bg-orange-500"}
+					rating={4.5}
+					key={"laravel"}
 				/>
 			</motion.ul>
 
@@ -183,13 +193,13 @@ const Skills = () => {
 					rating={4.5}
 					key={"chakra"}
 				/>
-				<SkillItem
+				{/*<SkillItem
 					icon={SiPostcss}
 					title={"PostCSS"}
 					className={"bg-pink-500"}
 					rating={4}
 					key={"postcss"}
-				/>
+				/>*/}
 			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
@@ -236,6 +246,27 @@ const Skills = () => {
 				className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2"
 			>
 				<SkillItem
+					icon={SiAdobeillustrator}
+					title={"Graphic Design"}
+					className={"bg-orange-500"}
+					rating={4}
+					key={"design"}
+				/>
+				<SkillItem
+					icon={SiAdobephotoshop}
+					title={"Graphic Design"}
+					className={"bg-blue-500"}
+					rating={4}
+					key={"design"}
+				/>
+				<SkillItem
+					icon={SiAdobelightroom}
+					title={"Graphic Design"}
+					className={"bg-blue-500"}
+					rating={4}
+					key={"design"}
+				/>
+				<SkillItem
 					icon={SiAbletonlive}
 					title={"Music Production"}
 					className={"bg-slate-500"}
@@ -255,14 +286,7 @@ const Skills = () => {
 					className={"bg-purple-500"}
 					rating={4}
 					key={"video"}
-				/>
-				<SkillItem
-					icon={SiAdobephotoshop}
-					title={"Graphic Design"}
-					className={"bg-blue-500"}
-					rating={4}
-					key={"design"}
-				/>
+				/>				
 			</motion.ul>
 		</div>
 	);

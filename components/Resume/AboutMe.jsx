@@ -10,11 +10,9 @@ const AboutMe = () => {
 		<div id="about" className="mt-8">
 			<SectionTitle href="#about">About Me</SectionTitle>
 			<p className="text-justify mt-2">
-				My name is <span className="font-moranga">Reinhard Kevin</span>, or you
-				can call me <span className="font-moranga">Rei</span>. I am currently an
-				undergraduate student majoring in{" "}
-				<TextHighlight>Computer Science</TextHighlight> in Kalbis Institute. I
-				focused myself in learning web and mobile application development. The
+				My name is <span className="font-moranga">Nicodemus Bagus Adi Kusuma Dahni Sualang</span>, or you
+				can call me <span className="font-moranga">Nico</span>. I'm a <TextHighlight>Developer</TextHighlight> and <TextHighlight>Designer</TextHighlight>  who loves turning ideas into interactive and creative digital experiences.{" "} I
+				focused myself in learning design and web development. The
 				main programming language I explore is{" "}
 				<TextHighlight>
 					<IoLogoJavascript className="text-amber-700" />
@@ -25,7 +23,7 @@ const AboutMe = () => {
 					<IoLogoReact className="text-sky-600" />
 					React
 				</TextHighlight>{" "}
-				framework (and its common environment). Not only coding skills, I also
+				framework (and its common environment). Not only coding and design skills, I also
 				do creative stuffs such as video editing, music production.{" "}
 				<TextHighlight>I love learning things</TextHighlight>, and always
 				willing to learn new things. I am{" "}

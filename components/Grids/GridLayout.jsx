@@ -17,6 +17,7 @@ import GridTimes from "./GridTimes";
 import GridCucipiring from "./GridCucipiring"
 import GridContacts from "./GridContacts";
 
+
 const MainGrid = () => {
 	const { breakpoint } = useDimension();
 	const { filter } = useFilter();
@@ -35,6 +36,8 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 3, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "contacts", x: 0, y: 4, w: 2, h: 1 },
+				{ i: "twitter", x: 2, y: 0, w: 1, h: 1 },
+
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -47,7 +50,9 @@ const MainGrid = () => {
 				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
 				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
-				{ i: "contacts", x: 0, y: 4, w: 3, h: 1 },
+				{ i: "contacts", x: 0, y: 4, w: 3, h: 1 }, 
+				{ i: "twitter", x: 2, y: 0, w: 1, h: 1 },
+
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -60,7 +65,9 @@ const MainGrid = () => {
 				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 6, w: 2, h: 1 },
 				{ i: "cucipiring", x: 0, y: 5, w: 2, h: 1 },
-				{ i: "contacts", x: 0, y: 7, w: 2, h: 2 },
+				{ i: "contacts", x: 0, y: 7, w: 2, h: 2 }, 
+				{ i: "twitter", x: 0, y: 0, w: 2, h: 1 },
+
 			],
 		},
 		about: {
@@ -75,7 +82,8 @@ const MainGrid = () => {
 				{ i: "cv", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
-				{ i: "contacts", x: 0, y: 1, w: 2, h: 1 },
+				{ i: "contacts", x: 0, y: 1, w: 2, h: 1 }, 
+				{ i: "twitter", x: 2, y: 0, w: 1, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 0, w: 2, h: 2 },
@@ -88,7 +96,8 @@ const MainGrid = () => {
 				{ i: "cv", x: 0, y: 3, w: 2, h: 2 },
 				{ i: "times", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
-				{ i: "contacts", x: 0, y: 1, w: 3, h: 1 },
+				{ i: "contacts", x: 0, y: 1, w: 3, h: 1 }, 
+				{ i: "twitter", x: 2, y: 0, w: 1, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -101,7 +110,8 @@ const MainGrid = () => {
 				{ i: "cv", x: 0, y: 8, w: 2, h: 2 },
 				{ i: "times", x: 0, y: 9, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
-				{ i: "contacts", x: 0, y: 1, w: 2, h: 2},
+				{ i: "contacts", x: 0, y: 1, w: 2, h: 2}, 
+				{ i: "twitter", x: 0, y: 0, w: 2, h: 1 },
 			],
 		},
 		projects: {
@@ -117,6 +127,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "cucipiring", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "contacts", x: 2, y: 4, w: 2, h: 1 },
+				{ i: "twitter", x: 2, y: 2, w: 1, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -130,6 +141,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "cucipiring", x: 0, y: 0, w: 2, h: 1 },
 				{ i: "contacts", x: 2, y: 4, w: 3, h: 1 },
+				{ i: "twitter", x: 2, y: 1, w: 1, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 3, w: 2, h: 2 },
@@ -143,6 +155,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "cucipiring", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "contacts", x: 0, y: 4, w: 2, h: 2 },
+				{ i: "twitter", x: 2, y: 1, w: 1, h: 1 },
 			],
 		},
 		media: {
@@ -158,6 +171,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 2, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "contacts", x: 0, y: 4, w: 2, h: 1 },
+				{ i: "twitter", x: 1, y: 1, w: 1, h: 1 },
 			],
 			sm: [
 				{ i: "bio", x: 0, y: 1, w: 2, h: 2 },
@@ -171,6 +185,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 3, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "contacts", x: 0, y: 4, w: 3, h: 1 },
+				{ i: "twitter", x: 0, y: 3, w: 1, h: 1 },
 			],
 			xxs: [
 				{ i: "bio", x: 0, y: 4, w: 2, h: 2 },
@@ -184,6 +199,7 @@ const MainGrid = () => {
 				{ i: "times", x: 0, y: 4, w: 2, h: 1 },
 				{ i: "cucipiring", x: 2, y: 3, w: 2, h: 1 },
 				{ i: "contacts", x: 0, y: 4, w: 2, h: 2 },
+				{ i: "twitter", x: 0, y: 4, w: 2, h: 1 },
 			],
 		},
 	};
@@ -262,6 +278,9 @@ const MainGrid = () => {
 				<div key={"cucipiring"} className="grid-item">
 					<GridCucipiring />
 				</div>
+				{/*<div key={"Twitter"} className="grid-item">
+					<GridTwitter />
+				</div>*/}
 			</ResponsiveGridLayout>
 		</div>
 	);

@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { useFilter } from '../../context/FilterContext'
 import { FILTER } from "../../constants/FilterConstants"
 
-import Times from "../../public/projects/cucipiring.png"
+import Times from "../../public/projects/kedaidaring.png"
 
 const GridCucipiring = () => {
 	const { filter } = useFilter()
@@ -16,7 +16,7 @@ const GridCucipiring = () => {
   return (
     <motion.div whileHover={"hover"} className={`h-full w-full relative flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}>
 			<Image
-				src="/projects/cucipiring_bg.svg"
+				src="/projects/times_bg.svg"
 				layout="fill"
 				// objectFit="contain"
 				alt=""
@@ -31,8 +31,8 @@ const GridCucipiring = () => {
 				className="absolute w-full h-full object-cover"
 			/>
 			<Link 
-				label="Cucipiring PWA"
-				href="https://cucipiring.vercel.app"
+				label="kedaidaring"
+				href="https://kedaidaring.com/"
 			/>
 		</motion.div>
   )

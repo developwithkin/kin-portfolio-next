@@ -15,10 +15,10 @@ const GridGithub = () => {
 			className={`bg-[#1B1F23] h-full w-full flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}
 		>
 			<img src="github.svg" alt="github-logo" className="h-20" />
-      <Link 
+      	<Link 
         label="Github"
-        href="https://github.com/reinhaaard13"
-      />
+        href="https://github.com/developwithkin"
+      	/>
 			{/* <motion.div
 				className="item-link transition-shadow duration-300 cursor-pointer bg-white w-9 h-9 absolute left-5 bottom-5 rounded-full flex justify-center items-center"
 				variants={variants}

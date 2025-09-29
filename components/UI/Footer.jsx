@@ -7,9 +7,9 @@ const Footer = () => {
 				Made with 💖 and ☕ by{" "}
 				<span className="font-moranga">Developwithkin</span>
 			</p>
-			<p className="font-normal text-xs text-slate-500">
+			{/* <p className="font-normal text-xs text-slate-500">
 				Inspired by: neflynn.com
-			</p>
+			</p> */}
 		</div>
 	);
 };

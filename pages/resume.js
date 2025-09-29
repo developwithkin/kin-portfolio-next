@@ -11,7 +11,7 @@ import {
 	useTransform,
 } from "framer-motion";
 
-import headshot from "../public/headshot.jpg";
+import headshot from "../public/nico-profile.jpeg";
 import Divider from "../components/UI/Divider";
 import TextHighlight from "../components/UI/TextHighlight";
 import AboutMe from "../components/Resume/AboutMe";
@@ -41,7 +41,7 @@ const ResumePage = () => {
 	return (
 		<>
 			<Head>
-				<title>Reinhard Kevin - Resume</title>
+				<title>Nico Bagus - Resume</title>
 			</Head>
 			<div className="fixed top-5 right-5 z-50">
 				<DarkToggler />
@@ -74,7 +74,7 @@ const ResumePage = () => {
 					/>
 					<div className="flex flex-col items-center sm:items-start sm:ml-8 hover:-skew-y-2 hover:tracking-wider cursor-pointer transition-all">
 						<h1 className="font-moranga text-center sm:text-inherit text-2xl sm:text-3xl mt-4 sm:mt-0">
-							Reinhard Kevin Mustakim
+							Nicodemus Bagus Adi Kusuma Dahni Sualang
 						</h1>
 						<h2>Fullstack Developer</h2>
 					</div>
@@ -88,8 +88,8 @@ const ResumePage = () => {
 				{/* Education Section */}
 				<Education />
 
-				{/* Organizational Experience Section */}
-				<OrganizationExperience />
+				{/* <OrganizationExperience /> */}
+
 
 				{/* Work Experience Section */}
 				<WorkExperience />

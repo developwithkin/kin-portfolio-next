@@ -55,9 +55,10 @@ const GridMap = () => {
 			onHoverEnd={() => setIsHovered(false)}
 		>
 			<motion.div
-				className="absolute z-10 h-24 w-24 flex justify-center items-center top-[calc(50%-3rem)] left-[calc(50%-3rem)] backdrop-blur-[1px] shadow-md border-[6px] border-white bg-amber-500/40 rounded-full"
-				variants={variants}
-			>
+	className="absolute z-10 h-24 w-24 flex justify-center items-center top-[calc(50%-3rem)] left-[calc(50%-3rem)] backdrop-blur-[1px] shadow-md border-[6px] border-white rounded-full"
+	style={{ backgroundColor: "#9ecdee" }}
+	variants={variants}
+>
 				<motion.img
 					src="memoji-smile.png"
 					alt=""

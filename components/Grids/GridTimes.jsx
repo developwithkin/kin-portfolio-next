@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { useFilter } from '../../context/FilterContext'
 import { FILTER } from "../../constants/FilterConstants"
 
-import Times from "../../public/projects/times.png"
+import Times from "../../public/projects/novatech-1.png"
 
 const GridTimes = () => {
 	const { filter } = useFilter()
@@ -16,7 +16,7 @@ const GridTimes = () => {
   return (
     <motion.div whileHover={"hover"} className={`h-full w-full relative flex justify-center items-center transition-opacity ${!visible && "opacity-25"}`}>
 			<Image
-				src="/projects/times_bg.svg"
+				src="/projects/disaster-bg.svg"
 				layout="fill"
 				// objectFit="contain"
 				alt=""
@@ -31,8 +31,8 @@ const GridTimes = () => {
 				className="absolute w-full h-full object-cover"
 			/>
 			<Link 
-				label="Times Ticketing"
-				href="https://github.com/reinhaaard13/times-ticketing"
+				label="www.novatech.co.id"
+				href="https://novatech.co.id/"
 			/>
 		</motion.div>
   )

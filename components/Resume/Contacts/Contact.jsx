@@ -12,29 +12,29 @@ const Contact = () => {
 				<ContactItem
 					icon={SiInstagram}
 					title={"Instagram"}
-					value={"@reinhaaard13"}
-					link={"https://www.instagram.com/reinhaaard13/"}
+					value={"@nicodemusaveiro"}
+					link={"https://www.instagram.com/nicodemusaveiro/"}
           className={"bg-pink-500"}
 				/>
 				<ContactItem
 					icon={SiLinkedin}
 					title={"LinkedIn"}
-					value={"reinhaaard13"}
-					link={"https://www.linkedin.com/in/reinhaaard13/"}
+					value={"Nicodemus Bagus"}
+					link={"https://www.linkedin.com/in/nicodemus-bagus/"}
           className={"bg-blue-500"}
 				/>
 				<ContactItem
 					icon={SiGmail}
 					title={"Email"}
-					value={"reinhardkevin.rk@gmail.com"}
-					link={"mailto:reinhardkevin.rk@gmail.com"}
+					value={"developwithkin@gmail.com"}
+					link={"mailto:developwithkin@gmail.com"}
           className={"bg-red-500"}
 				/>
 				<ContactItem
 					icon={SiGithub}
 					title={"Github"}
-					value={"reinhaaard13"}
-					link={"https://github.com/reinhaaard13"}
+					value={"developwithkin"}
+					link={"https://github.com/developwithkin"}
           className={"bg-gray-800"}
 				/>
 			</ul>
