@@ -49,7 +49,7 @@ const GridBio = () => {
 				src={excited ? "memoji-sad.png" : "memoji-smile.png"}
 				alt="avatar"
 				animate={avatar_ctrl}
-				className="w-fit h-28"
+				className="w-28 aspect-square object-contain"
 			/>
 			<p className="tracking-wide">
 				I&apos;m <span className="font-moranga text-3xl">Nico</span>, a developer and designer 
