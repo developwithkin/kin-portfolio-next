@@ -31,11 +31,13 @@ import {
 	SiAbletonlive,
 	SiProtools,
 	SiLaravel,
+	SiFigma,
 } from "react-icons/si";
 import StarRating from "../../UI/StarRating";
 import SkillItem from "./SkillItem";
 
 import { motion } from "framer-motion";
+import { SiWordpress } from "react-icons/si";
 
 const Skills = () => {
 	return (
@@ -167,6 +169,13 @@ const Skills = () => {
 					rating={4.5}
 					key={"laravel"}
 				/>
+				<SkillItem
+					icon={SiWordpress}
+					title={"Wordpress"}
+					className={"bg-sky-500"}
+					rating={4.5}
+					key={"wordpress"}
+				/>
 			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
@@ -284,6 +293,13 @@ const Skills = () => {
 					icon={SiAdobepremierepro}
 					title={"Video Editing"}
 					className={"bg-purple-500"}
+					rating={4}
+					key={"video"}
+				/>	
+				<SkillItem
+					icon={SiFigma}
+					title={"Graphic/Motion Design"}
+					className={"bg-blue-500"}
 					rating={4}
 					key={"video"}
 				/>				
