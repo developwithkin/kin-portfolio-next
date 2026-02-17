@@ -77,7 +77,7 @@ const ResumePage = () => {
 						<h1 className="font-moranga text-center sm:text-inherit text-2xl sm:text-3xl mt-4 sm:mt-0">
 							Nicodemus Bagus Adi Kusuma Dahni Sualang
 						</h1>
-						<h2>Fullstack Developer</h2>
+						<h2>Web Developer and Designer</h2>
 					</div>
 				</div>
 

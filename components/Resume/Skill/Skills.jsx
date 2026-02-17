@@ -124,14 +124,6 @@ const Skills = () => {
 					key={"rrd"}
 				/>
 				<SkillItem
-					icon={SiExpress}
-					title={"ExpressJS"}
-					className={"bg-gray-800"}
-					//certificate={"http://ude.my/UC-48d95105-9bbd-4103-9764-b9ca650c9b26"}
-					rating={4}
-					key={"expressjs"}
-				/>
-				<SkillItem
 					icon={SiNodedotjs}
 					title={"NodeJS"}
 					className={"bg-emerald-500"}
@@ -146,21 +138,6 @@ const Skills = () => {
 					className={"bg-gray-800"}
 					rating={4}
 					key={"nextjs"}
-				/>
-				<SkillItem
-					icon={SiFlutter}
-					title={"Flutter"}
-					className={"bg-cyan-500"}
-					rating={3.5}
-					key={"flutter"}
-				/>
-				<SkillItem
-					icon={SiRedux}
-					title={"Redux"}
-					//certificate={"http://ude.my/UC-ba644920-7503-409f-96a4-111ec0e23465"}
-					className={"bg-purple-500"}
-					rating={4}
-					key={"redux"}
 				/>
 				<SkillItem
 					icon={SiLaravel}
@@ -235,13 +212,6 @@ const Skills = () => {
 					rating={4.5}
 					key={"mongo"}
 				/>
-				<SkillItem
-					icon={SiSequelize}
-					title={"Sequelize"}
-					className={"bg-blue-500"}
-					rating={4}
-					key={"sequelize"}
-				/>
 			</motion.ul>
 
 			<h2 className="mt-4 grid font-semibold text-lg underline decoration-2 decoration-amber-500">
@@ -298,7 +268,7 @@ const Skills = () => {
 				/>	
 				<SkillItem
 					icon={SiFigma}
-					title={"Graphic/Motion Design"}
+					title={"Design and Prototype"}
 					className={"bg-blue-500"}
 					rating={4}
 					key={"video"}

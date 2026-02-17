@@ -9,13 +9,15 @@ const WORK_EXPERIENCE = [
     status: "Jakarta, Indonesia",
     period: "Jun 2023 - Now",
     responsibility: [
-      "Creates a responsive website, Cross-browser, Mobile friendly, Clean Code, Reusable & Maintainable.",
-      "Content edit, test, code debug, web pages redesign.",
-      "Create a UI UX Design to create an interactive website.",
-      "Optimize loading speed website.",
-      "Make design for instagram content of @novatech_life",
-      "Make design for digital advertisements",
-      "Edit videos for advertisement or campaign purposes"
+      "Developed and maintained corporate websites using responsive and mobile-ﬁrst approaches.",
+      "Improved website performance by optimizing assets, implementing caching strategies, and refactoring legacy code, resulting in a 30–40% reduction in load time.",
+      "Collaborated with marketing teams to build high-converting landing pages for digital campaigns.",
+      "Implemented technical SEO strategies including meta tags optimization, schema markup, and structured data.",
+      "Designed UI/UX improvements to enhance user engagement and streamline user flow.",
+      "Managed WordPress CMS including deployment, plugin updates, security patches,and routine maintenance.",
+      "Proposed and implemented performance improvement initiatives aligned with business objectives.",
+      "Supported digital advertising initiatives through landing page optimization (CRO).",
+      "Designed social media assets, product catalogs, and promotional brochures to support branding initiatives."
     ]
   },
   {
@@ -24,10 +26,12 @@ const WORK_EXPERIENCE = [
     status: "Jakarta, Indonesia",
     period: "Okt 2022 - Apr 2023",
     responsibility: [
-      "Develop, test, and maintain responsive websites using HTML, CSS, JavaScript, and other relevant programming languages.",
-      "Optimize website performance, including speed, scalability, and security.",
-      "Content edit, test, code debug, web pages redesign.",
-      "Debug and troubleshoot technical issues across different browsers and devices.,"
+      "Developed and optimized landing pages for digital marketing campaigns with a focus on performance and conversion rate.",
+      "Built new features and prototypes for internal web applications.",
+      "Applied clean code principles and modular architecture to improve maintainability.",
+      "Conducted debugging and performance optimization to enhance system stability.",
+      "Integrated Google Analytics and event tracking to support campaign performance analysis.",
+      "Contributed to scalable and user-friendly web application development."
     ]
   },
   {
@@ -36,18 +40,11 @@ const WORK_EXPERIENCE = [
     status: "Semarang, Indonesia",
     period: "Okt 2018 - Okt 2022",
     responsibility: [
-      "Designing and developing Information System using laravel framework for grha de arteri group's website.",
-      "Build a store on the marketplace (Tokopedia).",
-      "Designing Instagram Content.",
-      "Install and conﬁgure antivirus for computer security.",
-      "Creating or assembling networks and data cables.",
-      "Ensure that supporting systems such as printers and scanners can operate.",
-      "Perform data backup server.",
-      "Update the operating system or applications regularly.",
-      "Ensure that user data on the computer cannot be read or taken by unauthorized persons.",
-      "Make design for instagram content of @grhadearteri",
-      "Make design for digital advertisements",
-      "Edit videos for advertisement or campaign purposes"
+      "Developed internal information systems using Laravel and MySQL to support operational processes.",
+      "Managed and optimized Tokopedia marketplace listings to improve product visibility and sales performance.",
+      "Performed server maintenance, routine backups, and system security monitoring.",
+      "Designed digital marketing materials to support promotional strategies.",
+      "Improved IT infrastructure efﬁciency through regular system optimization and monitoring.",
     ]
   },
   {
