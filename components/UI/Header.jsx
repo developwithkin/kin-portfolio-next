@@ -46,7 +46,7 @@ const Header = () => {
 	const transform = useMotionTemplate`translateX(${left})`
 
 	return (
-		<div className="flex-col sm:flex-row pt-14 sm:pt-6 w-11/12 mx-auto sm:h-32 flex justify-between items-center">
+		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-col sm:flex-row pt-14 sm:pt-6 sm:h-32 flex justify-between items-center">
 			<Logo className="w-fit" width={"60"} height={"60"} viewBox="0 0 986 602"/>
 			{/* <img src="reilogo.svg" alt="logo" className="h-8" /> */}
 			<div className="mt-8 sm:mt-0">
