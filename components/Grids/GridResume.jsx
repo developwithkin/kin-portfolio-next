@@ -15,7 +15,7 @@ const GridResume = () => {
 			<div className="">
 				<h1 className="font-moranga text-2xl">Resume - More about me</h1>
 				<p className="">
-					An overview of my personal informations, skills, and experiences for you to know me better.
+					Specializing in Website Building, Visual Identity, and UI/UX Design based in Indonesia.
 				</p>
 			</div>
 
@@ -26,7 +26,6 @@ const GridResume = () => {
 						Read More
 					</a>
 				</Link>
-				<span className="text-slate-500">Mar 07, 2023</span>
 			</div>
 		</div>
 	);

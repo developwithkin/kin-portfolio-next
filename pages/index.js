@@ -17,7 +17,7 @@ function App() {
 	return (
 		<>
 			<Head>
-				<title>Developwithkin - Think. Make. Solve</title>
+				<title>Developwithkin - Think. Make. Solve.</title>
 			</Head>
 			<FilterContextProvider>
 				<motion.div className="overflow-x-clip" exit={{ opacity: 0 }}>
